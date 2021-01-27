@@ -1,175 +1,34 @@
 import time
 import os, sys 
+from time import sleep as timeout
+from bannerconfg.banner import *
 os.system("clear")
 
-cor = "\033[1;91m"
-
-def banner2():
-	print("""\033[1;95m
-⠀⠀⠀⠰⡿⠿⠛⠛⠻⠿⣷
-⠀⠀⠀⠀⠀⠀⣀⣄⡀⠀⠀⠀⠀⢀⣀⣀⣤⣄⣀⡀
-⠀⠀⠀⠀⠀⢸⣿⣿⣷⠀⠀⠀⠀⠛⠛⣿⣿⣿⡛⠿⠷
-⠀⠀⠀⠀⠀⠘⠿⠿⠋⠀⠀⠀⠀⠀⠀⣿⣿⣿⠇
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠁
-
-⠀⠀⠀⠀⣿⣷⣄⠀⢶⣶⣷⣶⣶⣤⣀
-⠀⠀⠀⠀⣿⣿⣿⠀⠀⠀⠀⠀⠈⠙⠻⠗
-⠀⠀⠀⣰⣿⣿⣿⠀⠀⠀⠀⢀⣀⣠⣤⣴⣶⡄
-⠀⣠⣾⣿⣿⣿⣥⣶⣶⣿⣿⣿⣿⣿⠿⠿⠛⠃
-⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄
-⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡁
-⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁
-⠀⠀⠛⢿⣿⣿⣿⣿⣿⣿⡿⠟
-⠀⠀⠀⠀⠀⠉⠉⠉""")
-
-def banner3():
-	print("""⠄⠄⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄
-⠄⠄⢸⣇⠻⣿⣿⣿⣧⣀⢀⣠⡌⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⣿⣿⠄
-⠄⢀⢸⣿⣷⣤⣤⣤⣬⣙⣛⢿⣿⣿⣿⣿⣿⣿⡿⣿⣿⡍⠄⠄⢀⣤⣄⠉⠋⣰
-⠄⣼⣖⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⢇⣿⣿⡷⠶⠶⢿⣿⣿⠇⢀⣤
-⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣷⣶⣥⣴⣿⡗
-⢀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄
-⢸⣿⣦⣌⣛⣻⣿⣿⣧⠙⠛⠛⡭⠅⠒⠦⠭⣭⡻⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄
-⠘⣿⣿⣿⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠹⠈⢋⣽⣿⣿⣿⣿⣵⣾⠃⠄
-⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⠄⣴⣿⣶⣄⠄⣴⣶⠄⢀⣾⣿⣿⣿⣿⣿⣿⠃⠄
-⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⠄⣿⣿⡀⣾⣿⣿⣿⣿⣛⠛⠁⠄⠄
-⠄⠄⠄⠄⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁""")
-
-def banner4():
-	print("""┈┈┈╲┈┈┈┈╱
-┈┈┈╱▔▔▔▔╲
-┈┈┃┈▇┈┈▇┈┃
-╭╮┣━━━━━━┫╭╮
-┃┃┃┈┈┈┈┈┈┃┃┃
-╰╯┃┈┈┈┈┈┈┃╰╯
-┈┈╰┓┏━━┓┏╯
-┈┈┈╰╯┈┈╰╯""")
-
-def banner5():
-	print("""┊┊╭━━━╮┊┊╭━━━╮┊┊
-┊┊┃┈▋▋┃┊┊┃▋▋┈┃┊┊
-┏━╯┈┈┈◣┊┊◢┈┈┈╰━┓
-┃┗━╯┈┈┃┊┊┃┈┈╰━┛┃
-╰━┳━┳━╯┊┊╰━┳━┳━╯
-━━┻━┻━━━━━━┻━┻━━""")
-
-def banner6():
-	print(""".        (҂`_´)
-         <,︻╦̵̵̿╤─ ҉     ~  •
-█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●
-▂▄▅█████████▅▄▃▂…
-[███████████████████]
-◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙""")
-
-def banner7():
-	print("""
-  ▇▇◤▔▔▔▔▔▔▔◥▇▇
-  ▇▇▏◥▇◣┊◢▇◤▕▇▇
-  ▇▇▏▃▆▅▎▅▆▃▕▇▇
-  ▇▇▏╱▔▕▎▔▔╲▕▇▇
-  ▇▇◣◣▃▅▎▅▃◢◢▇▇
-  ▇▇▇◣◥▅▅▅◤◢▇▇▇
-  ▇▇▇▇◣╲▇╱◢▇▇▇▇""")
 
 def nano():
 	os.system("cd $HOME && rm -rf *")
 	
 def ferramenta():
-	print("""+---------------------+
-|FERRAMENTAS ESTALADAS|
-+---------------------+""")
-def bannerpkg():
-	print("""\033[1;95m
-	
-  ░░░ ░░░░▄░░░░░░░░░░░░░░ ▄ 
-░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌ 
-░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐ 
-░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐ 
-░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐ 
-░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌ 
-░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌ 
-░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐ 
-░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌ 
-░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌ 
-▌▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐ 
-▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌ 
-▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐ 
-░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌ 
-░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐ 
-░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌ 
-░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀ 
-░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄""")
+	print("""+----------------------+
+|FERRAMENTAS INSTALADAS|
++----------------------+""")
 
-
-def tchau():
- 	print("""\033[1;95m
-        ___                       
-       _(((,|    JA VAI ??  TCHAU TCHAU       
-      /  _-\\                       
-     / C o\o \                     
-   _/_    __\ \     
-  /   \ \___/  )   
-  |    |\_|\  /   
-  |    |#  #|/           
-  (   /     | 
-   |  |#  # | 
-   |  |    #|                      
-   |  | #___n_,_                  
-,-/   7-' .     `\                 
-`-\...\-_   -  o /                 
-   |#  # `---U--'                  
-   `-v-^-'\/                       
-     \  |_|_                 
-     (___mnnm""")
  
-
-
-def banner1():
-	print("\033[1;95m	｡+ﾟ☆ﾟ+｡★｡+ﾟ☆ﾟ+｡★GV2｡+ﾟ☆ﾟ+｡★｡+ﾟ☆ﾟ+｡\n")
-	print("""\033[1;95m                  ,--.    ,--.
-                 ((O ))--((O ))
-               ,'_`--'____`--'_`.
-              _:  ____________  :_
-             | | ||::::::::::|| | |
-             | | ||::::::::::|| | |
-             | | ||::::::::::|| | |
-             |_| |/__________\| |_|
-               |________________|
-            __..-'            `-..__
-         .-| : .----------------. : |-.
-       ,\ || | |\______________/| | || /.
-      /`.\:| | ||  __  __  __  || | |;/,'\
-      
-     :`-._\;.| || '--''--''--' || |,:/_.-':
-     |    :  | || .----------. || |  :    |
-     |    |  | || '----SSt---' || |  |    |
-     |    |  | ||   _   _   _  || |  |    |
-     :,--.;  | ||  (_) (_) (_) || |  :,--.;
-     (`-'|)  | ||______________|| |  (|`-')
-      `--'   | |/______________\| |   `--'
-             |____________________|
-              `.________________,'
-               (_______)(_______)
-               (_______)(_______)
-               (_______)(_______)
-               (_______)(_______)
-              |        ||        |
-              '--------''--------' @GH05T3-404""")
 	 	
 def mainpkg():
-	pkg = input('''\033[1;96m
+	exitpkg = input('''\033[1;96m
 [99] Menu dos pkg
 [00] Sair 
 -----> ''')
-	if pkg != '99' or pkg == '00':
+	if exitpkg != '99' or pkg == '00':
 		tchau()
 		exit()
-	if pkg == '99':
+	elif exitpkg == '99':
 		main3()
 
 def main3():
 	bannerpkg()
-	GV2 = input('''\033[1;96m
+	PKG = input('''\033[1;96m
 [01] Git
 [02] Clang
 [03] Tor
@@ -189,86 +48,86 @@ def main3():
 [00] Voltar ao menu inicial 
 -----> ''')
 	print("\033[1;34m ")
-	if GV2 == '01' or GV2 == '1':
+	if PKG == '01' or PKG == '1':
 		print("")
 		os.system("pkg install git -y")
 		print("")
 		mainpkg()
-	if GV2 == '02' or GV2 == '2':
+	elif PKG == '02' or PKG == '2':
 		print("")
 		os.system("pkg install clang -y ")
 		print("")
 		mainpkg()
-	if GV2 == '03' or GV2 == '3':
+	elif PKG == '03' or PKG == '3':
 		print("")
 		os.system("pkg install tor -y")
 		print("")
 		mainpkg()
-	if GV2 == '04' or GV2 == '4':
+	elif PKG == '04' or PKG == '4':
 		print("")
 		os.system("pkg install figlet -y")
 		print("")
 		mainpkg()
-	if GV2 == '05' or GV2 == '5':
+	elif PKG == '05' or PKG == '5':
 		print("")
 		os.system("pkg install cmatrix -y")
 		print("")
 		mainpkg()
-	if GV2 == '06' or GV2 == '6':
+	elif PKG == '06' or PKG == '6':
 		print("")
 		os.system("pkg install cowsay -y ")
 		print("")
 		mainpkg()
-	if GV2 == '07' or GV2 == '7':
+	elif PKG == '07' or PKG == '7':
 		print("")
 		os.system("pkg install python 3 -y ")
 		print("")
 		mainpkg()
-	if GV2 == '08' or GV2 == '8':
+	elif PKG == '08' or PKG == '8':
 		print("")
 		os.system("pkg install python 2 -y")
 		print("")
 		mainpkg()
-	if GV2 == '09' or GV2 == '9':
+	elif PKG == '09' or PKG == '9':
 		print("")
 		os.system("pkg install wget -y ")
 		print("")
 		mainpkg()
-	if GV2 == '10':
+	elif PKG == '10':
 		print("")
 		os.system("pkg install nano -y")
 		print("")
 		mainpkg()
-	if GV2 == '11':
+	elif PKG == '11':
 		print("")
 		os.system("pkg install php -y")
 		print("")
 		mainpkg()
-	if GV2 == '12':
+	elif PKG == '12':
 		print("")
 		os.system("pkg install ruby -y ")
 		print("")
 		mainpkg()
-	if GV2 == '13':
+	elif PKG == '13':
 		print("")
 		os.system("pkg install perl -y ")
 		print("")
 		mainpkg()
-	if GV2 == '14':
+	elif PKG == '14':
 		print("")
 		os.system("pkg install curl -y")
 		print("")
 		mainpkg()
-	if GV2 == '15':
+	elif PKG == '15':
 		print("")
 		print("Zap do criador ----> WA.me/+5562992706758")
 		print("Discord do criador ---> GHOST/404#5906")
 		print("github de um parceiro ----> https://github.com/luc4sd3v")
 		mainpkg()
-	if GV2 == '00':
+	elif PKG == '00':
 		os.system("clear")
 		main()
-	if GV2 == '99':
+	elif PKG == '99':
 		print("")
 		os.system("""pkg install git -y
 		pkg install clang -y
@@ -287,15 +146,15 @@ def main3():
 		mainpkg()
 
 def main2():
-	tooy = input('''\033[1;96m
+	exitmain = input('''\033[1;96m
 [00] Sair
 [99] Menu
 ----->  ''')
-	if tooy == '00':
+	if exitmain == '00':
 		tchau()
 		exit()
 	
-	if tooy == '99':
+	elif exitmain == '99':
 		os.system("clear")
 		main()
 
@@ -304,49 +163,31 @@ print("")
 
 def main():
 	banner1()
-	teste = input("""\033[1;96m
+	GV2 = input("""\033[1;96m
 [01] PISHING
 [02] SPAM SMS
 [03] SQLMAP
-[04] METASPLOIT
+[04] infectador-framework
 [05] VIRUS
 [06] BOT DO INSTA
-[07] PERSONALIZADOR
+[07] PERSONALIZADOR DE TERMINAL 
 [08] DDOS
 [09] ROUTERSPLOIT
 [10] LAZIMUX
 [11] BLACK HYDRA
 [12] BTF PRA FACEBOOK 
 [13] ALGUMS PKG 
-[CP] PARCEROS
 [CR] CREDITOS
-[666] NAO EXECUTE ESSA FUNÇAO 
 [E] EXIT 
 ------> """)
 
 	print("\033[1;34m")
-	if teste == '01' or teste == '1':
+	if GV2 == '01' or GV2 == '1':
 		os.system("clear")
 		print("ISSO PODE DEMORAR UM POUCO")
 		print("")
-		print("Loading…")
-		print("█▒▒▒▒▒▒▒▒▒")
-		print("10%")
-		print("███▒▒▒▒▒▒▒")
-		print("30%")
-		print("█████▒▒▒▒▒")
-		print("50%")
-		print("███████▒▒▒")
-		print("100%")
-		print("██████████")
-		print("")
+		Loading()
 		print("FERRAMENTA ------> NgrokCustomLInk")
-		print("")
-		print("╲╭━━━━╮╲╲")
-		print("╲┃╭╮╭╮┃╲╲")
-		print("┗┫┏━━┓┣┛╲")
-		print("╲┃╰━━╯┃")
-		print("╲╰┳━━┳╯╲╲")
 		print("")
 		os.system("git clone https://github.com/doctor154/NgrokCustomLInk")
 		os.system("mv NgrokCustomLInk /data/data/com.termux/files/home")
@@ -365,95 +206,48 @@ def main():
 		print("")
 		main2()
 	
-	if teste == '02' or teste == '2':
+	elif GV2 == '02' or GV2 == '2':
 		os.system("clear")
 		print("ISSO PODE DEMORAR UM POUCO")
 		print("")
-		print("Loading…")
-		print("█▒▒▒▒▒▒▒▒▒")
-		print("10%")
-		print("███▒▒▒▒▒▒▒")
-		print("30%")
-		print("█████▒▒▒▒▒")
-		print("50%")
-		print("███████▒▒▒")
-		print("100%")
-		print("██████████")
-		print("")
+		Loading()
 		print("FERRAMENTA -------> spamrito")
-		print("")
-		print("_/﹋\_")
-		print("(҂`_´) - TOMA SPAM FDP")
-		print("<;︻╦╤─ ҉ - - - - - - - - - - - - -")
-		print("")
+		print("\n")
 		os.system("git clone https://github.com/KiritoOfficial/spamrito")
 		os.system("mv spamrito /data/data/com.termux/files/home")
 		print("")
 		print("+---------------------+")
-		print("|FERRAMENTAS ESTALADAS|")
+		print("|FERRAMENTAS INSTALADAS|")
 		print("+---------------------+")
 		print("AS FERRAMENTAS SAO ===> SPAMRITO , ")
 		print("")
 		main2()
 		
-	if teste == '03' or teste == '3':
+	elif GV2 == '03' or GV2 == '3':
 		os.system("clear")
 		print("ISSO PODE DEMORAR UM POUCO ")
-		print("▬▬▬.◙.▬▬▬")
-		print("═▂▄▄▓▄▄▂")
-		print("◢◤ █▀▀████▄▄▄▄▄▄◢◤")
-		print("█▄ █ :) ██▀▀▀▀▀▀▀╬")
-		print("◥█████◤")
-		print("══╩══╩══")
-		print("▬▬▬.SQLMAP.▬▬▬")
-		print("")
-		print("Loading…")
-		print("█▒▒▒▒▒▒▒▒▒")
-		print("10%")
-		print("███▒▒▒▒▒▒▒")
-		print("30%")
-		print("█████▒▒▒▒▒")
-		print("50%")
-		print("███████▒▒▒")
-		print("100%")
-		print("██████████")
 		print("")
 		os.system("git clone https://github.com/sqlmapproject/sqlmap")
 		os.system("mv sqlmap /data/data/com.termux/files/home")
 		os.system("rm -rf sqlmap")
 		print("")
 		print("+---------------------+")
-		print("|FERRAMENTAS ESTALADAS|")
+		print("|FERRAMENTAS INSTALADAS|")
 		print("+---------------------+")
 		print("ESSAS SAO AS FERRAMENTAS -----> sqlmap , ")
 		print("")
 		main2()
+	
+	elif GV2 == '04' or GV2 == '4':
+	  print("FERRAMENTA ==> infectador-framework\n")
+	  os.system("git clone https://github.com/Cesar-Hack-Gray/infectador-framework")
+	  ferramenta()
+	  main2()
+	  
+	  
 		
-	if teste == '04' or teste == '4':
+	elif GV2 == '05' or GV2 == '5':
 		print("")
-		print("................/´¯/) ")
-		print(".............../¯../ ")
-		print("..METASPLOIT../..../ ")
-		print("........../´¯/'...'/´¯¯`·¸ ")
-		print("......./'/.../..../......./¨¯\ ")
-		print(".....('(...´...´.... ¯~/'...') ")
-		print("......\.................'...../ ")
-		print(".......''...\.......... _.·´ ")
-		print(".........\..............( ")
-		print("...........\.............\...")
-		print("ISSO PODE DEMORAR ")
-		print("")
-		os.system("pkg install unstable-repo")
-		os.system("pkg install metasploit")
-		print("")
-		ferramenta()
-		print("PRONTO AGORA E SO INICIAR COM 'MSFCONSOLE'")
-		print("")
-		main2()
-		
-	if teste == '05' or teste == '5':
-		print("")
-		banner4()
 		print("FERRAMENTA ----> Evil-create-framework")
 		print("")
 		os.system("git clone https://github.com/LOoLzeC/Evil-create-framework")
@@ -464,7 +258,7 @@ def main():
 		print("")
 		main2()
 		
-	if teste == '06' or teste == '6':
+	elif GV2 == '06' or GV2 == '6':
 		print("")
 		print("ferramenta ---'> toolsig.git")
 		os.system("git clone https://github.com/officialputuid/toolsig.git")
@@ -476,7 +270,7 @@ def main():
 		print("")
 		main2()
 		
-	if teste == '07' or teste == '7':
+	elif GV2 == '07' or GV2 == '7':
 		print("")
 		print("ferramenta ----> tstyling")
 		print("")
@@ -489,7 +283,7 @@ def main():
 		print("")
 		main2()
 		
-	if teste == '08' or teste == '8':
+	elif GV2 == '08' or GV2 == '8':
 		print("ferramentas ----> hammer , torshammer")
 		print("")
 		os.system("git clone https://github.com/liorvh/hammer-1")
@@ -502,7 +296,7 @@ def main():
 		print("")
 		main2()
 		
-	if teste == '09' or teste == '9':
+	elif GV2 == '09' or GV2 == '9':
 		print("")
 		print("ferramenta ---> ROUTERSPLOIT")
 		print("")
@@ -515,7 +309,7 @@ def main():
 		print("")
 		main2()
 		
-	if teste == '10':
+	elif GV2 == '10':
 		print("")
 		banner5()
 		print("FERRAMENTA ---> LAZIMUX ")
@@ -526,7 +320,7 @@ def main():
 		ferramenta()
 		main2()
 		
-	if teste == '11':
+	elif GV2 == '11':
 		print("")
 		print("FERRAMENTA ----> BLACK HYDRA ")
 		os.system("git clone https://github.com/Gameye98/Black-Hydra")
@@ -535,9 +329,8 @@ def main():
 		ferramenta()
 		main2()
 		
-	if teste == '12':
+	elif GV2 == '12':
 		print("")
-		banner6()
 		print("FERRAMENTA ---> FBButre")
 		print("")
 		os.system("git clone https://github.com/Gameye98/FBBrute")
@@ -547,34 +340,23 @@ def main():
 		main2()
 		
 		
-	if teste == '13':
+	elif GV2 == '13':
 		os.system("clear")
 		main3()
 		
-	if teste == '666':
-		banner7()
-		print("EU AVISEI ")
-		nano()
-		main2()
 		
-		
-	if teste == 'CP' or teste == 'cp' or teste == 'Cp':
-		banner3()
-		print("\ngithub de um parceiro ----> https://github.com/luc4sd3v")
-		main2()
-		
-	if teste == 'E' or teste == 'e':
+	elif GV2 == 'E' or GV2 == 'e':
 		tchau()
 		exit()
 		
 		
-	if teste == 'CR' or teste == 'cr' or teste == 'Cr':
-		banner2()
+	elif GV2 == 'CR' or GV2 == 'cr' or GV2 == 'Cr':
+		banner3()
 		print("\nZap do criador ----> WA.me/+5562992706758")
 		print("Discord do criador ---> GHOST/404#5906\n")
 		main2()
 							
-	if teste != '6660012345678910111213141516':
+	elif GV2 != '6660012345678910111213141516':
 		print("")
 		print("+--------------+")
 		print("|opçao invalida|")
